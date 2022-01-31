@@ -12,6 +12,7 @@ export const WrapperInfoUser = styled.div`
   justify-content: space-between;
   margin-left: 8px;
   height: 200px;
+  color: rgb(235,235,235);
 
   h1 {
     font-size: 32px;
@@ -49,7 +50,7 @@ export const WrapperUserGeneric = styled.div`
 
   a {
     font-size: 18px;
-    color: blue;
+    color: #3182ce;
     font-weight: bold;
   }
 `;

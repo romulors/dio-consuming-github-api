@@ -1,30 +1,30 @@
 import React from "react";
-import Layout from "./components/layout";
-import NoSearch from "./components/no-search";
+import AppLayout from "./components/appLayout";
+import BigTextMessage from "./components/bigTextMessage";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
 import useGithub from "./hooks/github-hooks";
 
 const App = () => {
-  const { githubState } = useGithub();
-  return (
-    <Layout>
-      {githubState.hasUser ? (
-        <>
-          {githubState.loading ? (
-            <p>Loading</p>
-          ) : (
-            <>
-              <Profile />
-              <Repositories />
-            </>
-          )}
-        </>
-      ) : (
-        <NoSearch />
-      )}
-    </Layout>
-  );
+	const { githubState } = useGithub();
+	return (
+		<AppLayout>
+			{githubState.hasUser ? (
+				<>
+					{githubState.loading ? (
+						<p>Loading</p>
+					) : (
+						<>
+							<Profile />
+							<Repositories />
+						</>
+					)}
+				</>
+			) : (
+				<BigTextMessage message="Nenhum usuario pesquisado"/>
+			)}
+		</AppLayout>
+	);
 };
 
 export default App;

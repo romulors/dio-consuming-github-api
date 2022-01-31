@@ -5,6 +5,7 @@ export const WrapperTabs = styled(Tabs)`
   font-size: 16px;
   width: 100%;
   margin-top: 16px;
+  color: rgb(235,235,235);
 `;
 
 export const WrapperTabList = styled(TabList)`
@@ -12,6 +13,7 @@ export const WrapperTabList = styled(TabList)`
   padding: 4px;
   display: flex;
   margin: 0;
+  
 `;
 WrapperTabList.tabsRole = "TabList";
 

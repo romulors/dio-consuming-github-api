@@ -3,6 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const ResetCSS = createGlobalStyle`
   /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
+/* Ajusta o background para ocupar toda tela    */
+/* ============================================ */
+* {
+	background: no-repeat center fixed; 
+    background-image: linear-gradient(rgb(15,15,15), rgb(5,5,5));
+	background-size: cover;
+}
+
 /* Reset box-model and set borders */
 /* ============================================ */
 
