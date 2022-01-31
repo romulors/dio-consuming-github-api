@@ -12,6 +12,15 @@ Os principais aspectos abordados foram o consumo de uma API externa e a separaç
 
 ![plot](./img/pic.png)
 
+## Para executar
+
+As dependências não estão inclusas. Para rodar o projeto, use:
+
+```
+	npm install //instala as dependências
+	npm start   //inicia no localhost:3000
+```
+
 ### Principais Bibliotecas utilizadas
 
 - [axios](https://www.npmjs.com/package/axios)
